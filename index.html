@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body>
     <div class="pre-header">
@@ -312,7 +313,7 @@
       </ul>
     </nav>
     <div class="m-header">
-      <div class="m-header__catalog"><a class="catalog-button" href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg">
+      <div class="m-header__catalog"><a class="catalog-button navigation__text modal-open" href="#catalog-modal" rel="modal:open"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.375 0.75H26.625V3.66667H0.375V0.75ZM0.375 8.04167H26.625V10.9583H0.375V8.04167ZM0.375 15.3333H26.625V18.25H0.375V15.3333Z"/>
 </svg>
 </a></div>
@@ -320,12 +321,15 @@
         <div class="m-search-wrapper">
           <form class="search-form">
             <div class="search-form__wrapper">
-              <input class="search-form__input" type="search" name="search" placeholder="Поиск...">
+              <input class="search-form__input" type="search" name="search" placeholder="Поиск..." autocomplete="off">
               <button class="search-form__button"><svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 0C16.4478 0 19.7544 1.36964 22.1924 3.80761C24.6303 6.24558 25.9999 9.55219 25.9999 13C25.9999 16.22 24.8199 19.18 22.88 21.46L23.42 22H24.9999L34.9999 32L31.9999 35L22 25V23.42L21.46 22.88C19.18 24.82 16.22 26 13 26C9.55224 26 6.24566 24.6304 3.80771 22.1924C1.36975 19.7544 0.00012207 16.4478 0.00012207 13C0.00012207 9.55219 1.36975 6.24558 3.80771 3.80761C6.24566 1.36964 9.55224 0 13 0ZM13 4C8.00007 4 4.00009 8 4.00009 13C4.00009 18 8.00007 22 13 22C18 22 22 18 22 13C22 8 18 4 13 4Z"/>
 </svg>
 
-              </button>
+              </button><a class="search-form__close" href="#"><svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.72812L12.2719 0L7.5 4.77188L2.72812 0L0 2.72812L4.77188 7.5L0 12.2719L2.72812 15L7.5 10.2281L12.2719 15L15 12.2719L10.2281 7.5L15 2.72812Z"/>
+</svg>
+</a>
             </div>
           </form>
         </div>
@@ -341,7 +345,7 @@
 </a><a class="cart-button" href="#"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M27.9999 28C26.0574 28 24.5 29.5575 24.5 31.5C24.5 32.4283 24.8687 33.3185 25.5251 33.9749C26.1814 34.6312 27.0717 35 27.9999 35C28.9282 35 29.8184 34.6312 30.4748 33.9749C31.1312 33.3185 31.4999 32.4283 31.4999 31.5C31.4999 29.5575 29.9249 28 27.9999 28ZM0.00012207 0V3.5H3.5001L9.80005 16.7825L7.42007 21.07C7.15757 21.56 7.00007 22.1375 7.00007 22.75C7.00007 23.6783 7.36882 24.5685 8.02519 25.2249C8.68157 25.8813 9.5718 26.25 10.5 26.25H31.4999V22.75H11.235C11.119 22.75 11.0077 22.7039 10.9257 22.6219C10.8436 22.5398 10.7975 22.4285 10.7975 22.3125C10.7975 22.225 10.815 22.155 10.85 22.1025L12.425 19.25H25.4624C26.7749 19.25 27.9299 18.515 28.5249 17.4475L34.7899 6.125C34.9124 5.845 34.9999 5.5475 34.9999 5.25C34.9999 4.78587 34.8155 4.34075 34.4873 4.01256C34.1591 3.68437 33.714 3.5 33.2499 3.5H7.36757L5.72258 0H0.00012207ZM10.5 28C8.55756 28 7.00007 29.5575 7.00007 31.5C7.00007 32.4283 7.36882 33.3185 8.02519 33.9749C8.68157 34.6312 9.5718 35 10.5 35C11.4283 35 12.3185 34.6312 12.9749 33.9749C13.6313 33.3185 14 32.4283 14 31.5C14 29.5575 12.425 28 10.5 28Z" fill="white"/>
 </svg>
-</a><a class="menu-button" href="#"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+</a><a class="modal-open menu-button" href="#mobile-menu-modal" rel="modal:open"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.5275 0L6.5 4.94879L11.4725 0L13 1.531L6.5 8L0 1.531L1.5275 0Z"/>
 </svg>
 </a></div>
@@ -7979,6 +7983,90 @@
                       </ul>
                     </div>
                   </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="mobile-menu-modal">
+      <div class="catalog-content">
+        <div class="content-col-wrapper lvl-0-wrapper">
+          <ul class="category-list lvl-0">
+            <li class="category-list__item category-list__close"><a class="close-modal category-list__close" href="#close-modal" rel="modal:close"><svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.72812L12.2719 0L7.5 4.77188L2.72812 0L0 2.72812L4.77188 7.5L0 12.2719L2.72812 15L7.5 10.2281L12.2719 15L15 12.2719L10.2281 7.5L15 2.72812Z"/>
+</svg>
+</a></li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>О компании</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>Оплата и доставка</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>Монтаж</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>Услуги</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>Акции</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="category-list__item"><a class="category-list__link" href="#"><span>Контакты</span><svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 13.225L5.56275 7.5L0 1.7625L1.71255 0L9 7.5L1.71255 15L0 13.225Z"/>
+</svg>
+</a>
+              <div class="content-col-wrapper lvl-1-wrapper content-col-child">
+                <ul class="category-list lvl-1">
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Отзывы</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Партнеры</span></a></li>
+                  <li class="category-list__item"><a class="category-list__link" href="#"><span>Новости</span></a></li>
                 </ul>
               </div>
             </li>
