@@ -2652,7 +2652,7 @@ nav .navigation__text {
 }
 
 .content-container .main-content .info-block {
-  min-width: 400px;
+  width: 400px;
   padding: 0 10px;
   padding-bottom: 20px;
 }
