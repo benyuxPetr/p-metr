@@ -5186,6 +5186,9 @@ footer .footer-end .footer-end-container__text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 15px;
   color: #252726;
   -webkit-box-orient: vertical;
