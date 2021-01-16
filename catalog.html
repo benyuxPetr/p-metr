@@ -20,22 +20,42 @@
 <path d="M3.21778 6.92444C4.49778 9.44 6.56 11.5022 9.07556 12.7822L11.0311 10.8267C11.28 10.5778 11.6267 10.5067 11.9378 10.6044C12.9333 10.9333 14 11.1111 15.1111 11.1111C15.3469 11.1111 15.573 11.2048 15.7397 11.3715C15.9064 11.5382 16 11.7643 16 12V15.1111C16 15.3469 15.9064 15.573 15.7397 15.7397C15.573 15.9064 15.3469 16 15.1111 16C11.1034 16 7.25983 14.4079 4.42594 11.5741C1.59206 8.74017 0 4.89661 0 0.888889C0 0.653141 0.0936505 0.427048 0.260349 0.260349C0.427048 0.0936505 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0936505 4.62854 0.260349C4.79524 0.427048 4.88889 0.653141 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"/>
 </svg>
 </a></div>
-        <div class="account-buttons"><a class="account-button slide-modal-button" href="#"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+        <div class="account-buttons"><a class="account-buttons__btn" href="#"><span class="contact-button__text">Избранное</span><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
+</svg>
+</a><a class="account-buttons__btn" href="#"><span class="contact-button__text">Сравнить товары</span><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
+</svg>
+</a>
+          <div class="account"><a class="account-button slide-modal-button" href="#"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.5275 0L6.5 4.94879L11.4725 0L13 1.531L6.5 8L0 1.531L1.5275 0Z"/>
 </svg>
 <span class="account-button__text">Аккаунт</span><svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 0C9.06087 0 10.0783 0.395088 10.8284 1.09835C11.5786 1.80161 12 2.75544 12 3.75C12 4.74456 11.5786 5.69839 10.8284 6.40165C10.0783 7.10491 9.06087 7.5 8 7.5C6.93913 7.5 5.92172 7.10491 5.17157 6.40165C4.42143 5.69839 4 4.74456 4 3.75C4 2.75544 4.42143 1.80161 5.17157 1.09835C5.92172 0.395088 6.93913 0 8 0ZM8 9.375C12.42 9.375 16 11.0531 16 13.125V15H0V13.125C0 11.0531 3.58 9.375 8 9.375Z"/>
 </svg>
 </a>
-          <div class="slide-modal">
-            <form class="standart-form">
-              <div class="form-content"><span class="form-content__header">Логин</span>
-                <input class="form-content__input" type="text" name="login" placeholder="Логин"><span class="form-content__header">Пароль</span>
-                <input class="form-content__input" type="phone" name="password" placeholder="Пароль">
-                <button class="form-content__button" type="submit">Вход</button>
-                <button class="form-content__button" type="submit">Регистрация</button>
+            <div class="slide-modal">
+              <div class="slide-modal__content">
+                <form class="standart-form">
+                  <div class="form-content"><span class="form-content__header">Логин</span>
+                    <input class="form-content__input" type="text" name="login" placeholder="Логин"><span class="form-content__header">Пароль</span>
+                    <input class="form-content__input" type="phone" name="password" placeholder="Пароль">
+                    <button class="form-content__button" type="submit">Вход</button>
+                    <button class="form-content__button" type="submit">Регистрация</button>
+                  </div>
+                </form>
               </div>
-            </form>
+              <div class="slide-modal__content">
+                <div class="slide-modal__name">Артем Иванов</div>
+                <ul class="slide-modal__login-list">
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Мои заказы</a></li>
+                  <li><a href="#">Мои возвраты</a></li>
+                  <li><a href="#">Лицевой счет</a></li>
+                  <li><a href="#">Сообщения (0)</a></li>
+                </ul><a class="info-item__button" href="#">Выход</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -332,11 +352,11 @@
             </div>
           </form>
         </div>
-        <div class="m-actions-wrapper"><a class="mail-button modal-open" href="#mail-modal" rel="modal:open"><svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.4 3.25L8 7.3125L1.6 3.25V1.625L8 5.6875L14.4 1.625V3.25ZM14.4 0H1.6C0.712 0 0 0.723125 0 1.625V11.375C0 11.806 0.168571 12.2193 0.468629 12.524C0.768687 12.8288 1.17565 13 1.6 13H14.4C14.8243 13 15.2313 12.8288 15.5314 12.524C15.8314 12.2193 16 11.806 16 11.375V1.625C16 0.723125 15.28 0 14.4 0Z"/>
+        <div class="m-actions-wrapper"><a class="like-button" href="#"><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
 </svg>
-</a><a class="call-button modal-open" href="#call-modal" rel="modal:open"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.21778 6.92444C4.49778 9.44 6.56 11.5022 9.07556 12.7822L11.0311 10.8267C11.28 10.5778 11.6267 10.5067 11.9378 10.6044C12.9333 10.9333 14 11.1111 15.1111 11.1111C15.3469 11.1111 15.573 11.2048 15.7397 11.3715C15.9064 11.5382 16 11.7643 16 12V15.1111C16 15.3469 15.9064 15.573 15.7397 15.7397C15.573 15.9064 15.3469 16 15.1111 16C11.1034 16 7.25983 14.4079 4.42594 11.5741C1.59206 8.74017 0 4.89661 0 0.888889C0 0.653141 0.0936505 0.427048 0.260349 0.260349C0.427048 0.0936505 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0936505 4.62854 0.260349C4.79524 0.427048 4.88889 0.653141 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"/>
+</a><a class="compare-button" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
 </svg>
 </a><a class="user-button" href="#"><svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 0C9.06087 0 10.0783 0.395088 10.8284 1.09835C11.5786 1.80161 12 2.75544 12 3.75C12 4.74456 11.5786 5.69839 10.8284 6.40165C10.0783 7.10491 9.06087 7.5 8 7.5C6.93913 7.5 5.92172 7.10491 5.17157 6.40165C4.42143 5.69839 4 4.74456 4 3.75C4 2.75544 4.42143 1.80161 5.17157 1.09835C5.92172 0.395088 6.93913 0 8 0ZM8 9.375C12.42 9.375 16 11.0531 16 13.125V15H0V13.125C0 11.0531 3.58 9.375 8 9.375Z"/>
@@ -8585,6 +8605,22 @@
             </li>
           </ul>
         </div>
+        <div class="menu-button-bottom-line">
+          <div class="menu-button-bottom-line__row contact-buttons"><a class="contact-button modal-open" href="#mail-modal" rel="modal:open"><svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.4 3.25L8 7.3125L1.6 3.25V1.625L8 5.6875L14.4 1.625V3.25ZM14.4 0H1.6C0.712 0 0 0.723125 0 1.625V11.375C0 11.806 0.168571 12.2193 0.468629 12.524C0.768687 12.8288 1.17565 13 1.6 13H14.4C14.8243 13 15.2313 12.8288 15.5314 12.524C15.8314 12.2193 16 11.806 16 11.375V1.625C16 0.723125 15.28 0 14.4 0Z"/>
+</svg>
+<span class="contact-button__text">Обратная связь</span></a><a class="contact-button modal-open" href="#call-modal" rel="modal:open"><span class="contact-button__text">Заказать звонок</span><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.21778 6.92444C4.49778 9.44 6.56 11.5022 9.07556 12.7822L11.0311 10.8267C11.28 10.5778 11.6267 10.5067 11.9378 10.6044C12.9333 10.9333 14 11.1111 15.1111 11.1111C15.3469 11.1111 15.573 11.2048 15.7397 11.3715C15.9064 11.5382 16 11.7643 16 12V15.1111C16 15.3469 15.9064 15.573 15.7397 15.7397C15.573 15.9064 15.3469 16 15.1111 16C11.1034 16 7.25983 14.4079 4.42594 11.5741C1.59206 8.74017 0 4.89661 0 0.888889C0 0.653141 0.0936505 0.427048 0.260349 0.260349C0.427048 0.0936505 0.653141 0 0.888889 0H4C4.23575 0 4.46184 0.0936505 4.62854 0.260349C4.79524 0.427048 4.88889 0.653141 4.88889 0.888889C4.88889 2 5.06667 3.06667 5.39556 4.06222C5.49333 4.37333 5.42222 4.72 5.17333 4.96889L3.21778 6.92444Z"/>
+</svg>
+</a></div>
+          <div class="menu-button-bottom-line__row action-buttons"><a class="contact-button" href="#"><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
+</svg>
+<span class="contact-button__text">Избранное</span></a><a class="contact-button" href="#"><span class="contact-button__text">Сравнить товары</span><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
+</svg>
+</a></div>
+        </div>
       </div>
     </div>
     <div class="scroll-top-container">
@@ -8828,6 +8864,9 @@
             <div class="disabled-header disabled-header_link category-switch">
               <h1>Ламинат</h1><a href="#">Скрывать подкатегории</a>
             </div>
+            <div class="standart-content category-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis delectus excepturi exercitationem itaque quisquam voluptatibus! Atque autem consectetur corporis dignissimos doloribus ducimus itaque mollitia sapiente vel voluptas. Ab, eos, soluta.</p>
+            </div>
             <div class="category wrap switchable"><a class="category__item" href="#">
                 <div class="category__content">
                   <div class="category__header">Виниловый ламинат</div>
@@ -8854,7 +8893,18 @@
               <div class="sort-items">
                 <div class="sort-items__item sort-items__price"><span class="sort-items__text">Сортировать по:</span>
                   <div class="dropdown">
-                    <div class="dropdown__label">Цене</div>
+                    <div class="dropdown__label"><span>Цене</span>
+                      <div class="sort-items__icon"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5275 0L6.5 4.94879L11.4725 0L13 1.531L6.5 8L0 1.531L1.5275 0Z"/>
+</svg>
+
+                      </div>
+                      <div class="sort-items__icon sort-items__icon_reverse"><svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5275 0L6.5 4.94879L11.4725 0L13 1.531L6.5 8L0 1.531L1.5275 0Z"/>
+</svg>
+
+                      </div>
+                    </div>
                     <ul class="dropdown__menu">
                       <li class="dropdown__item"><a href="#">Умолчанию</a></li>
                       <li class="dropdown__item"><a href="#">Возрастанию цены</a></li>
@@ -8882,17 +8932,25 @@
                 <div class="product__top-line">
                   <div class="product__support-items"><img class="tooltip" src="img/icons/produt/product-properties/countries/ru.svg" title="Страна производства: Россия"></div>
                   <div class="product__type"><img src="img/icons/produt/product-types/class-41.svg"></div>
-                </div><a class="product__image-container" href="#"><img src="img/example/product.png"></a>
+                </div><a class="product__image-container" href="#"><img src="img/example/product.png">
+                  <div class="label-container label-container_absolute">
+                    <div class="label-container__item label-container__item_red">Скидка</div>
+                    <div class="label-container__item label-container__item_green">Новый</div>
+                    <div class="label-container__item label-container__item_purple">Акция</div>
+                    <div class="label-container__item label-container__item_yellow">Распродажа</div>
+                  </div></a>
                 <div class="product__bottom-line">
                   <div class="product__properties-item tooltip fask-text" title="Наличие фаски 2V" data-text="2V"><img src="img/icons/produt/product-properties/2V.svg"></div>
                   <div class="product__properties-item tooltip" title="Позвоните и узнайте свою скидку"><img src="img/icons/produt/product-properties/call-now.svg"></div>
                   <div class="product__properties-item tooltip" title="Экологичный"><img src="img/icons/produt/product-properties/eco.svg"></div>
-                </div>
-                <div class="product__name">Ламинат Biela CBM Jemnost 104 Либице</div>
+                </div><a class="product__name" href="#">Ламинат Biela CBM Jemnost 104 Либице</a>
                 <div class="product__code">Код товара: <span>23413</span></div>
-                <div class="product__price">1 250,00 ₽</div>
+                <div class="product__price"><span>1 250,00 ₽</span></div>
                 <div class="product__link-line"><a href="#">Подарок за покупку</a><a href="#">Скидки</a></div>
-                <div class="product__button-line"><a class="buy-btn" href="#">Купить</a><a class="compare-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+                <div class="product__button-line product__button-line_small"><a class="buy-btn" href="#">Купить</a><a class="square-btn" href="#"><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
+</svg>
+</a><a class="square-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
 </svg>
 </a></div>
@@ -8909,12 +8967,14 @@
                   <div class="product__properties-item tooltip" title="Скидка"><img src="img/icons/produt/product-properties/discount.svg"></div>
                   <div class="product__properties-item tooltip discount-text" title="Скидка второй вариант" data-text="-20"><img src="img/icons/produt/product-properties/discount-1.svg"></div>
                   <div class="product__properties-item tooltip width-text" title="Ширина 25mm" data-text="25"><img src="img/icons/produt/product-properties/width.svg"></div>
-                </div>
-                <div class="product__name">Ламинат Biela CBM Jemnost 104 Либице</div>
+                </div><a class="product__name" href="#">Ламинат Biela CBM Jemnost 104 Либице</a>
                 <div class="product__code">Код товара: <span>23413</span></div>
-                <div class="product__price">1 250,00 ₽</div>
+                <div class="product__price"><span class="old-price">1 850,00 ₽</span><span>1 250,00 ₽</span></div>
                 <div class="product__link-line"><a href="#">Подарок за покупку</a><a href="#">Скидки</a></div>
-                <div class="product__button-line"><a class="buy-btn" href="#">Купить</a><a class="compare-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+                <div class="product__button-line product__button-line_small"><a class="buy-btn" href="#">Купить</a><a class="square-btn" href="#"><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
+</svg>
+</a><a class="square-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
 </svg>
 </a></div>
@@ -8928,12 +8988,14 @@
                   <div class="product__properties-item tooltip" title="Нет в наличии"><img src="img/icons/produt/product-properties/not-in-stock.svg"></div>
                   <div class="product__properties-item tooltip" title="Теплый пол"><img src="img/icons/produt/product-properties/warm-floor.svg"></div>
                   <div class="product__properties-item tooltip" title="Позвоните и узнайте скидку"><img src="img/icons/produt/product-properties/call-now.svg"></div>
-                </div>
-                <div class="product__name">Ламинат Biela CBM Jemnost 104 Либице</div>
+                </div><a class="product__name" href="#">Ламинат Biela CBM Jemnost 104 Либице</a>
                 <div class="product__code">Код товара: <span>23413</span></div>
-                <div class="product__price">1 250,00 ₽</div>
+                <div class="product__price"><span>1 250,00 ₽</span></div>
                 <div class="product__link-line"><a href="#">Подарок за покупку</a><a href="#">Скидки</a></div>
-                <div class="product__button-line"><a class="buy-btn" href="#">Купить</a><a class="compare-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+                <div class="product__button-line product__button-line_small"><a class="buy-btn" href="#">Купить</a><a class="square-btn" href="#"><svg width="35" height="32" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4999 32L14.9624 29.6981C5.94996 21.5542 0 16.1657 0 9.59128C0 4.20273 4.23497 0 9.62493 0C12.6699 0 15.5924 1.41253 17.4999 3.62725C19.4074 1.41253 22.3298 0 25.3748 0C30.7648 0 34.9998 4.20273 34.9998 9.59128C34.9998 16.1657 29.0498 21.5542 20.0374 29.6981L17.4999 32Z"/>
+</svg>
+</a><a class="square-btn" href="#"><svg width="24" height="28" viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 28V8.4H5.33333V28H0ZM9.33333 28V0H14.6667V28H9.33333ZM18.6667 28V16.8H24V28H18.6667Z"/>
 </svg>
 </a></div>
